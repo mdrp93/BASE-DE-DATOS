@@ -36,7 +36,7 @@ git commit -m
 git commit -a
 git add "nombre archivo"
  git add * --->> agregar todos los cambios 
-git license
+git add LICENSE
 git clone
 git remove ""
 git rm ""
