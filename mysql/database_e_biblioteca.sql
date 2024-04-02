@@ -158,3 +158,25 @@ FROM Libro
 LEFT JOIN Autor ON Libro.Autor = Autor.Nombre
 WHERE Autor.Nombre IS NULL;
 
+SELECT Prestamo.ID, Prestamo.FechaPrestamo, Prestamo.FechaDevolucion, Usuario.Nombre AS NombreUsuario, Libro.Titulo AS TituloLibro
+FROM Prestamo
+LEFT JOIN Usuario ON Prestamo.UsuarioID = Usuario.ID
+LEFT JOIN Libro ON Prestamo.LibroID = Libro.ID;
+
+SELECT Prestamo.ID AS PrestamoID, 
+       Prestamo.FechaPrestamo, 
+       Prestamo.FechaDevolucion, 
+       Usuario.ID AS UsuarioID, 
+       Usuario.Nombre AS NombreUsuario, 
+       Usuario.Direccion AS DireccionUsuario, 
+       Usuario.Email AS EmailUsuario, 
+       Usuario.Telefono AS TelefonoUsuario, 
+       Libro.ID AS LibroID, 
+       Libro.Titulo AS TituloLibro, 
+       Libro.Autor AS AutorLibro, 
+       Libro.ISBN AS ISBNLibro, 
+       Libro.Categoria AS CategoriaLibro, 
+       Libro.AnioPublicacion AS AnioPublicacionLibro
+FROM Prestamo
+LEFT JOIN Usuario ON Prestamo.UsuarioID = Usuario.ID
+LEFT JOIN Libro ON Prestamo.LibroID = Libro.ID;
