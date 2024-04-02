@@ -119,3 +119,8 @@ LEFT JOIN Libro ON Autor.nombre = Libro.autor
 LEFT JOIN Prestamo ON Libro.ID = Prestamo.LibroID
 GROUP BY Autor.Nombre, Libro.Titulo; 
 
+SELECT Prestamo.*
+FROM Prestamo
+LEFT JOIN Usuario ON Prestamo.UsuarioID = Usuario.ID
+WHERE Usuario.ID IS NULL;
+
