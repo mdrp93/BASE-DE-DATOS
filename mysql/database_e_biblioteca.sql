@@ -124,3 +124,37 @@ FROM Prestamo
 LEFT JOIN Usuario ON Prestamo.UsuarioID = Usuario.ID
 WHERE Usuario.ID IS NULL;
 
+SELECT*FROM usuario;
+SELECT*FROM prestamo;
+
+SELECT Libro.*
+FROM Libro
+LEFT JOIN Prestamo ON Libro.ID = Prestamo.LibroID
+WHERE Prestamo.ID IS NULL;
+
+SELECT*FROM libro;
+
+SELECT Prestamo.*, Libro.*
+FROM Prestamo
+INNER JOIN Libro ON Prestamo.LibroID = Libro.ID;
+
+SELECT Libro.*, Prestamo.*
+FROM Libro
+LEFT JOIN Prestamo ON Libro.ID = Prestamo.LibroID;
+
+SELECT Autor.*
+FROM Autor
+LEFT JOIN Libro ON Autor.Nombre = Libro.Autor
+WHERE Libro.ID IS NULL;
+
+SELECT*FROM autor;
+
+SELECT Autor.*, Libro.*
+FROM Autor
+LEFT JOIN Libro ON Autor.Nombre = Libro.Autor;
+
+SELECT Libro.*
+FROM Libro
+LEFT JOIN Autor ON Libro.Autor = Autor.Nombre
+WHERE Autor.Nombre IS NULL;
+
