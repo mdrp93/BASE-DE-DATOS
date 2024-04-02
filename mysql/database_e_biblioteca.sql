@@ -107,6 +107,15 @@ left join autor on libro.autor = autor.nombre
 left join prestamo on libro.ID = prestamo.LibroID
 group by libro.titulo, autor.nombre;
 
+SELECT Libro.Titulo, Prestamo.FechaPrestamo, Usuario.Nombre AS NombreUsuario
+FROM Prestamo
+LEFT JOIN Libro ON Prestamo.LibroID = Libro.ID
+LEFT JOIN Usuario ON Prestamo.UsuarioID = Usuario.ID;
 
 
+SELECT autor.Nombre AS NombreAutor, Libro.titulo, COUNT(Prestamo.ID) AS CantidadPrestamos
+FROM autor
+LEFT JOIN Libro ON Autor.nombre = Libro.autor
+LEFT JOIN Prestamo ON Libro.ID = Prestamo.LibroID
+GROUP BY Autor.Nombre, Libro.Titulo; 
 
