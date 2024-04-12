@@ -1,0 +1,20 @@
+
+
+1. Obtener el nombre y la edad de las jugadoras que pertenecen a equipos cuyo entrenador sea "Stephan Lerch"
+2. Obtener el nombre y la posición de las jugadoras que juegan en equipos de la ciudad de "Madrid"
+3. Obtener el nombre y la posición de las jugadoras menores de 25 años
+4. Obtener el nombre de los equipos que han jugado partidos en el torneo con ID 1
+5. Obtener el nombre de los equipos que han ganado al menos un torneo
+6. Obtener el nombre del torneo en el que ha participado el equipo con ID 3
+7. Obtener el nombre y la posición de las jugadoras que pertenecen a equipos de países diferentes al de sus equipos
+8. Obtener el nombre de los equipos que han jugado un partido en la fecha 2023-05-15
+9. Obtener el nombre y la posición de las jugadoras que pertenecen a equipos cuyo entrenador sea Jean-Luc Vasseur
+10. Obtener el nombre de los equipos que han jugado al menos un partido en un torneo que tenga lugar en España
+11. Obtener el nombre y la edad de las jugadoras que pertenecen a equipos con más de 2 jugadoras menores de 25 años
+12. Obtener el nombre de los equipos que han jugado partidos en todos los torneos en los que han participado
+13. Obtener el nombre de los equipos que han jugado partidos como equipo local y visitante en la misma fecha
+14. Obtener el nombre de los equipos que han ganado al menos un partido en un torneo en el que han participado:
+15. Obtener el nombre de los equipos que han jugado un partido en una fecha posterior a la del último partido del equipo con ID 1
+16. Obtener el nombre de los equipos cuyas jugadoras tengan una edad menor que la edad promedio de todas las jugadoras
+17. Obtener el nombre del equipo que ha jugado el mayor número de partidos como equipo visitante
+18. Obtener el nombre de los equipos cuya posición final en al menos un torneo fue "Subcampeón"
